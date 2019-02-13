@@ -8,13 +8,12 @@ import { withLogin } from "./Contexts/login/loginWrapper";
 
 const App = () => (
   <React.Fragment>
-    <div style={{ display: "flex" }}>
-      {/*never ever do inline styles*/}
+    <div style={{ wordBreak: "break-all" }}>
       <CreateUser />
-      <div style={{ flex: 1 }}>
+      <div>
         <SignInUser />
       </div>
-      <div style={{ flex: 1 }}>
+      <div>
         <CallApi />
       </div>
     </div>
