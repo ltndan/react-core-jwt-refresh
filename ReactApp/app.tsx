@@ -5,17 +5,15 @@ import { SignInUser } from "./Components/SigninUser";
 import { CallApi } from "./Components/CallApi";
 import { UserInfo } from "./Components/UserInfo";
 import { withLogin } from "./Contexts/login/loginWrapper";
+import { RefreshToken } from "./Components/RefreshToken";
 
 const App = () => (
   <React.Fragment>
     <div style={{ wordBreak: "break-all" }}>
       <CreateUser />
-      <div>
-        <SignInUser />
-      </div>
-      <div>
-        <CallApi />
-      </div>
+      <SignInUser />
+      <CallApi />
+      <RefreshToken />
     </div>
     <UserInfo />
   </React.Fragment>
